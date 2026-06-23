@@ -1,1 +1,1 @@
-const data = 'hello world'
+var data = 'hello world'
