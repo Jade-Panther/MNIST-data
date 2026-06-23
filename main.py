@@ -16,7 +16,7 @@ with open('mnist_train.csv') as f:
         if not row:
             continue
 
-        data.append([[int(p) for p in row[1:]], int(row[0])])
+        data.append([[int(p) for p in row[1:]], [int(row[0])]])
 
 js = f'var data = {json.dumps(data)};\n'
 
